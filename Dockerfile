@@ -7,8 +7,7 @@ JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 
 ARG GPG_KEY=C823E3E5B12AF29C67F81976F5CECB3CB5E9BD2D
 ARG ZK_DIST=zookeeper-3.4.10
-ADD zookeeper-3.4.10.tar.gz /zookeeper-3.4.10.tar.gz
-ADD zookeeper-3.4.10.tar.gz.asc /
+
 RUN set -x \
     && apt-get update \
     && apt-get install -y openjdk-8-jre-headless wget netcat-openbsd \
